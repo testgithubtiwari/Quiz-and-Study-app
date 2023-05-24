@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Class1"
+    android:background="#E1F09819">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:padding="@dimen/_3sdp"
+        android:text="YouTube Links"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/textview_links"/>
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@+id/textview_links"
+            android:scaleType="fitXY"
+            android:id="@+id/imageview_youtube"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:src="@drawable/link_image"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_youtube"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/lin1">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link1"
+                android:textSize="30sp"
+                android:layout_marginStart="35sp"
+                android:layout_marginLeft="15sp"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:onClick="openLink"
+                android:id="@+id/textview_link1" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link2"
+                android:textSize="30sp"
+                android:layout_marginStart="45sp"
+                android:layout_marginLeft="5sp"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:onClick="openLink"
+                android:id="@+id/textview_link2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link3"
+                android:textSize="30sp"
+                android:layout_marginStart="45sp"
+                android:layout_marginLeft="5sp"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:onClick="openLink"
+                android:id="@+id/textview_link3" />
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin1"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="#C30040FF"
+            android:padding="5dp"
+            android:id="@+id/cardview_1">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash_image"
+                android:padding="5dp"
+                android:id="@+id/linkbelow_image"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview_1"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/lin2">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz1"
+                android:textSize="30sp"
+                android:layout_marginStart="35sp"
+                android:layout_marginLeft="15sp"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:onClick="openLink"
+                android:id="@+id/textview_quiz1"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz2"
+                android:textSize="30sp"
+                android:layout_marginStart="45sp"
+                android:layout_marginLeft="5sp"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:onClick="openLink"
+                android:id="@+id/textview_quiz2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz3"
+                android:textSize="30sp"
+                android:layout_marginStart="45sp"
+                android:layout_marginLeft="5sp"
+                android:textStyle="bold"
+                android:autoLink="web"
+                android:clickable="true"
+                android:onClick="openLink"
+                android:id="@+id/textview_quiz3" />
+
+
+        </LinearLayout>
+</RelativeLayout>
+
+</ScrollView>

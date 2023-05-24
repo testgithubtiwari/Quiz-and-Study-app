@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdatePwdActivity"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Primary">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview_1"
+            app:cardCornerRadius="12sp"
+            app:cardElevation="8sp"
+            android:layout_margin="11dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/RL_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+
+            <TextView
+                android:id="@+id/textview_update_pwd_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="You can Change your Password Now! Just a few steps required"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+            <TextView
+                android:id="@+id/textview_update_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_update_pwd_head"
+                android:layout_marginTop="20dp"
+                android:padding="6dp"
+                android:text="Current Password*"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/textview_update_pwd_old"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_update_pwd"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:padding="6dp"
+                android:textSize="16sp"
+                android:hint="Enter your current password"/>
+
+
+            <Button
+                android:id="@+id/button_update_pwd_authneticate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_update_pwd_old"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="70dp"
+                android:background="@drawable/border"
+                android:text="authenticate" />
+
+
+            <ProgressBar
+                android:id="@+id/progressbar_update_RL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_update_pwd_old"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"/>
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/border"
+            android:layout_below="@+id/cardview_1"
+            android:id="@+id/RL2_email">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_update_pwd_authenticate"
+                android:layout_marginTop="10dp"
+                android:text="You are not verified till! Please authenticate yourself to get new Password!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:background="@drawable/border"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_update_newpwd"
+                android:layout_below="@+id/textview_update_pwd_authenticate"
+                android:text="New Password*"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="6dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_below="@+id/textview_update_newpwd"
+                android:hint="Enter your new Password"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edittext_update_pwd_new"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_update_confirmpwd"
+                android:layout_below="@+id/edittext_update_pwd_new"
+                android:text="Confirm Password*"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="6dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_below="@+id/textview_update_confirmpwd"
+                android:hint="Confirm your new Password"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edittext_update_pwd_confirm"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittext_update_pwd_confirm"
+                android:text="Save Password"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="90dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:id="@+id/button_update_pwd"/>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

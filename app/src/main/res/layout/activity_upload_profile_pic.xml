@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadProfilePicActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_profile_pic_upload"
+            android:text="Upload your profile picture here!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_profile_file_pick_dp"
+            android:layout_below="@+id/textview_profile_pic_upload"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="20dp"
+            android:text="Choose Picture"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:background="@drawable/border"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/imageview_profile_pic"
+            android:layout_below="@+id/button_profile_file_pick_dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_progressbar_pic"
+            android:layout_below="@+id/button_profile_file_pick_dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="380dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttton_upload_pick_dp"
+            android:layout_below="@+id/imageview_profile_pic"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:text="Upload Photo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:background="@drawable/border"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
